@@ -1,0 +1,38 @@
+class compare_with:
+	def__inti__(self)
+	self.name = "Palash"
+	self.age = 34
+
+	def compare (self, other) // compare (who is calling, whom to compare)
+	if self.age == other.age:
+	return True
+	
+	else:
+	return False
+
+	C1 = compare_with ()
+	C1.age = 35          // we changed the age of C1
+	c2 = compare_with ()     // but by defalt c2 gets global age 
+
+	if C1.compare (c2):  // calling the cokpare methods, C1 will be defined as self and c2 will be defined as other 
+		print("they are the same")
+	else:
+		print("they are different")
+	
+	
+Day 2: 
+	there are two  kinds of variable which are 1. instance variable it can be changed according to the instance and 2. class (static variable)
+	
+
+	class car:
+
+	wheels = 4               // it is defined outside the init so it is static variable and it will be the same for every intance. if you change the calss variables it wil be changed 					for all the instances
+
+	def __inti__(self) 	// if you declear a varable intside the inti it becaome instance variable and those values changes according to the car so it is the instance variables
+		self.mil = 10
+		self.com = 'BMW' 	
+
+	car_one = car()
+	car_two = car()
+	print(car_one.mil, car_one.com, car_one.wheels)
+	print(car_two.mil, car_two.com, car_two.wheels)
