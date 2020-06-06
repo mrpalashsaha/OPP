@@ -1,0 +1,23 @@
+if you create object of subclass it will first try to find init of sub class if it is not there then it will go and look in the super class.
+it is also possible to call the init form super class by mentioning super().__init__(), if you call super then it will first call init of super 
+class then it will print the init of sub class.
+
+when you have a multiple inharitance it will always start from left to right. so whatever you put in the left sde it will call that first.
+to repreasent super class we use super method. 
+
+ Introduction to Polymorphism in Python
+ 
+ one thing can take multiple form. as human being we have different form we behave diffirent in different situation.
+ there are four ways to implement polymorphism 
+ 1. Duck Typing
+ 2. operator overloading 
+ 3. Method overloading
+ 4. Method ovverridding. 
+ 
+ 1.  if it look like a Duck 
+ swims like a duck 
+ quacks like a duck 
+ then it probabley a DUck
+ 
+ operator overloading:
+ 
